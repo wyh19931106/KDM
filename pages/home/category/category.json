@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "分类查询",
+  "usingComponents": {
+    "v-countryWin": "../../component/countryWin/countryWin",
+    "v-resultNull": "../../component/resultNull/resultNull"
+  }
+}

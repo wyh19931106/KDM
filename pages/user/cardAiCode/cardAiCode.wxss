@@ -1,0 +1,132 @@
+/* pages/user/cardAiCode/cardAiCode.wxss */
+.cardAiCode {
+  width: 100%;
+}
+.cardAiCode .card_con {
+  margin: 60rpx 40rpx;
+  height: auto;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 9px 1px 
+		rgba(0, 0, 0, 0.3);
+	border-radius: 10rpx;
+}
+.cardAiCode .card_con .card_box {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.cardAiCode .card_con .card_box .bg {
+  width: 100%;
+  height: auto;
+}
+.cardAiCode .card_con .card_box .logo {
+  position: absolute;
+  top: 50rpx;
+  left: 50rpx;
+  width: 114rpx;
+  height: auto;
+}
+.cardAiCode .card_con .card_box .infor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 25rpx 35rpx;
+  overflow: hidden;
+}
+.cardAiCode .card_con .card_box .infor .left {
+  width: 40%;
+  padding-top: 79rpx;
+  padding-left: 30rpx;
+}
+.cardAiCode .card_con .card_box .infor .left .avatar {
+  width: 215rpx;
+  height: auto;
+}
+.cardAiCode .card_con .card_box .infor .left .l_inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+}
+.cardAiCode .card_con .card_box .infor .left .l_inf .name {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+}
+.cardAiCode .card_con .card_box .infor .left .l_inf .obj {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 16rpx;
+  margin-top: 2rpx;
+}
+.cardAiCode .card_con .card_box .infor .right {
+  width: 60%;
+}
+.cardAiCode .card_con .card_box .infor .right .company {
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  padding-left: 100rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 16rpx;
+  color: #9a9a9a;
+}
+.cardAiCode .card_con .card_box .infor .right .mem_inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100rpx;
+  padding-left: 100rpx;
+}
+.cardAiCode .card_con .card_box .infor .right .mem_inf .name {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 34rpx;
+}
+.cardAiCode .card_con .card_box .infor .right .mem_inf .obj {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+  color: #9a9a9a;
+  margin-top: 2rpx;
+}
+.cardAiCode .card_con .card_box .infor .right .r_inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: SourceHanSansCN-Normal;
+  height: 180rpx;
+	font-size: 16rpx;
+  color: #9a9a9a;
+  padding-left: 50rpx;
+}
+.cardAiCode .card_con .card_box .infor .right .r_inf .item {
+  line-height: 30rpx;
+}
+.cardAiCode .card_con .code {
+  display: block;
+  width: 358rpx;
+  height: auto;
+  margin: 0 auto;
+}
+.cardAiCode .card_con  .hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 102rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+   color: #9a9a9a;
+}
+.cardAiCode .save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 268rpx;
+	height: 84rpx;
+	background-color: #18425a;
+	border-radius: 10rpx;
+  font-family: SourceHanSansCN-Medium;
+	font-size: 32rpx;
+  color: #ffffff;
+  margin: 0 auto;
+}

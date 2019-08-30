@@ -1,0 +1,33 @@
+<!--pages/component/shareWin/shareWin.wxml-->
+<view class="share_win window" wx:if="{{show}}" bindtap="shareHide">
+  <view class="window_box share_box" catchtap="bindDefault">
+    <view class="share_tr">
+      <view class="share_item">
+        <image src="../../../images/icon_share_wechat.png" mode="widthFix"></image>
+        <text>微信</text>
+      </view>
+      <view class="share_item">
+        <image src="../../../images/icon_share_friend.png" mode="widthFix"></image>
+        <text>微信朋友圈</text>
+      </view>
+      <view class="share_item">
+        <image src="../../../images/icon_share_qq.png" mode="widthFix"></image>
+        <text>qq</text>
+      </view>
+      <view class="share_item">
+        <image src="../../../images/icon_share_space.png" mode="widthFix"></image>
+        <text>QQ空间</text>
+      </view>
+      <view class="share_item">
+        <image src="../../../images/icon_share_weibo.png" mode="widthFix"></image>
+        <text>微博</text>
+      </view>
+    </view>
+    <view class="share_tr">
+      <view class="share_item">
+        <image src="../../../images/icon_share_more.png" mode="widthFix"></image>
+        <text>更多</text>
+      </view>
+    </view>
+  </view>
+</view>

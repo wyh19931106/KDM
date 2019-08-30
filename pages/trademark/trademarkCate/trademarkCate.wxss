@@ -1,0 +1,24 @@
+/* pages/trademark/trademarkCate/trademarkCate.wxss */
+page {
+  background: #f8f8f8;
+}
+.trademarkCate .title {
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  padding: 0 30rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 30rpx;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.trademarkCate .list {
+  padding: 10rpx 30rpx;
+  background: #ffffff;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 30rpx;
+  color: #9a9a9a;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.trademarkCate .list .item {
+  line-height: 54rpx;
+}

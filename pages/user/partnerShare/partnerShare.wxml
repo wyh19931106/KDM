@@ -1,0 +1,17 @@
+<!--pages/user/partnerShare/partnerShare.wxml-->
+<view class="partnerShare">
+  <view class="table">
+    <view class="th">
+      <view class="td td1">项目名称</view>
+      <view class="td td2">分享平台</view>
+      <view class="td td3">点击数</view>
+      <view class="td td4">分享日期</view>
+    </view>
+    <view class="tr" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="td td1">商标查询</view>
+      <view class="td td2">朋友圈</view>
+      <view class="td td3">1452</view>
+      <view class="td td4">2019/7/15</view>
+    </view>
+  </view>
+</view>

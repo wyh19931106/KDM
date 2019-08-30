@@ -1,0 +1,66 @@
+<!--pages/trademark/trademarkQuery/trademarkQuery.wxml-->
+<view class="content trademarkQuery">
+  
+  <view class="query">
+    <view class="country" bindtap="countryShow"><text>国家</text></view>
+    <view class="cate" bindtap="trademarkShow"><text>类别</text></view>
+    <input class="text" type="text" confirm-type="search" placeholder="请输入关键词" placeholder-style="color: #9a9a9a;"/>
+    <view class="btn" bindtap="bindSearch"><icon type="search" size="12" color="#ffffff" />搜索</view>
+  </view>
+  <view class="result_y">
+    <view class="hint">共检索到987个商标信息，检测结果存在查询盲区，仅供参考。</view>
+    <view class="table">
+
+      <view class="tr">
+        <view class="td td1">建议注册类别：</view>
+        <view class="td td2" bindtap="toAdvise">
+          <text>01 化学制剂、肥料 39 运输贮藏、40 材料加工 27类 地毯席垫 32类 啤酒饮料 </text>
+          <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="tr">
+        <view class="td td1">尝试注册类别：</view>
+        <view class="td td2" bindtap="toAdvise">
+          <text>02颜料油漆03 日化用品04 燃料油脂  37 建筑修理38 通讯服务</text>
+          <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="tr">
+        <view class="td td1">不建议注册类别：</view>
+        <view class="td td2">
+          <text>39 运输贮藏40 材料加工 </text>
+        </view>
+      </view>
+
+    </view>
+    
+    <view class="list">
+
+      <view class="item" wx:for="{{list}}" wx:key="{{item}}" data-id='{{item}}' bindtap="toDetails">
+        <view class="img"><image src="../../../images/icon_logo.jpg" mode="widthFix"></image></view>
+        <view class="inf">
+          <view class="tit">CADMON</view>
+          <view class="cate">35126686（09类 科学仪器）</view>
+          <view class="company">凯德盟有限公司</view>
+          <view class="at">2018-12-15</view>
+          <view class="status">已注册</view>
+        </view>
+        <view class="fav">
+          收藏商标
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+  <!-- 国家选择 -->
+  <v-countryWin show="{{country_show}}" bind:countryHide="countryHide"></v-countryWin>
+
+  <!-- 商标类别选择 -->
+  <v-trademarkWin show="{{trademark_show}}" bind:trademarkHide="trademarkHide"></v-trademarkWin>
+
+  <!-- 查询结果 -->
+  <v-resultNull show="{{result_show}}" bind:resultHide="resultHide"></v-resultNull>
+
+</view>

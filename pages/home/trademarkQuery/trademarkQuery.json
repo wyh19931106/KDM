@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "商标",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "v-countryWin": "../../component/countryWin/countryWin",
+    "v-trademarkWin": "../../component/trademarkWin/trademarkWin",
+    "v-resultNull": "../../component/resultNull/resultNull"
+  }
+}

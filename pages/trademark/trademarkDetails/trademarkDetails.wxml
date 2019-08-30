@@ -1,0 +1,92 @@
+<!--pages/trademark/trademarkDetails/trademarkDetails.wxml-->
+<view class="trademarkDetails content">
+  <view class="top_show">
+    <image src="../../../images/img_logo.jpg" mode="widthFix"></image>
+  </view>
+
+  <view class="infor">
+
+    <view class="item">
+      <view class="txt">商标名称：</view>
+      <view class="val">凯德盟 CADMON</view>
+    </view>
+
+    <view class="item">
+      <view class="txt">申请人：</view>
+        <view class="val">深圳市凯德盟文化传播有限公司</view>
+    </view>
+
+    <view class="item justify">
+      <view class="l">
+        <view class="txt">注册号：</view>
+        <view class="val">10842954</view>
+      </view>
+      <view class="r" bindtap="toCate">
+        <view class="txt">商标类别：</view>
+        <view class="val">45类   社会服务 </view>
+        <image src="../../../images/icon_right.png" mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="txt">申请日期：</view>
+      <view class="val">2012-04-27</view>
+    </view>
+
+    <view class="item justify">
+      <view class="l">
+        <view class="txt">初审公告期号：</view>
+        <view class="val">1357</view>
+      </view>
+      <view class="r">
+        <view class="txt">初审公告日期：</view>
+        <view class="val">2013/4/27</view>
+      </view>
+    </view>
+
+    <view class="item justify">
+      <view class="l">
+        <view class="txt">注册公告期号：</view>
+        <view class="val">1369</view>
+      </view>
+      <view class="r">
+        <view class="txt">注册公告日期：</view>
+        <view class="val">2013/7/28</view>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="txt">有效期：</view>
+      <view class="val">2013-07-28 - 2023-07-27</view>
+    </view>
+
+    <view class="item">
+      <view class="txt">代理机构：</view>
+      <view class="val">深圳市凯德盟文化传播有限公司</view>
+    </view>
+
+    <view class="item justify" bindtap="toPlan">
+      <view class="txt">商标进度：</view>
+      <image src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+
+  </view>
+
+  <view class="fixed_b">
+    <view class="l" bindtap="alertShow">添加收藏</view>
+    <view class="r">人工查询</view>
+  </view>
+
+  <!-- 提示弹窗 -->
+  <view class="select_win alert_win" wx:if="{{alert_show}}">
+    <view class="title">
+      <view class="cancel" bindtap="alertHide">取消</view>
+      <view class="confirm">确定</view>
+    </view>
+    <view class="infor_con">
+      <view>你已收藏商标类别3个</view>
+      <view>请到“个人中心’查看</view>
+    </view>
+  </view>
+  
+</view>

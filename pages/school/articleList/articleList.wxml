@@ -1,0 +1,29 @@
+<!--pages/school/articleList/articleList.wxml-->
+<view class="articleList">
+  <view class="top_search">
+    <view class="input">
+      <input type="text" placeholder="请输入搜索关键词" value="{{keyword}}" placeholder-style="color: #9a9a9a;"/>
+    </view>
+    <view class="btn" bindtap="bindResult"><icon type="search" size="12" color="#ffffff" />搜索</view>
+  </view>
+
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{item}}" data-to="{{'../articleDetails/articleDetails?id=' + index}}" bindtap="openWin">
+      <view class="tit">注册一个美国商标大概需要多少钱?</view>
+      <view class="inf">2018年4月16日 - 注册一个美国商标大概需要多少钱?商标在美国被采用使用在先的保护原则,所以在申请注册商标时必须要同时提交使用证明以及在美国使用的日期。那么注</view>
+      <view class="count">
+        <view class="read">阅读 423</view>
+        <view class="zan">
+          <image src="../../../images/icon_praise.png" mode="widthFix"></image>
+          127
+        </view>
+        <view class="share">
+          <image src="../../../images/icon_share.png" mode="widthFix"></image>
+          127
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <v-resultNull show="{{result_show}}" bind:resultHide="resultHide"></v-resultNull>
+</view>

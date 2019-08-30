@@ -1,0 +1,55 @@
+/* pages/user/applyPatent/applyPatent.wxss */
+.applyPatent {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+.applyPatent .form {
+  width: 100%;
+  padding: 0 15rpx 200rpx;
+}
+.applyPatent .form .item {
+  display: flex;
+  width: 100%;
+  height: 76rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+  color: #636363;
+  border: 1rpx solid #e9e9e9;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+.applyPatent .form .item .txt {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 250rpx;
+  height: 100%;
+  background: #f8f8f8;
+  padding-right: 15rpx;
+  border-right: 1rpx solid #e9e9e9;
+}
+.applyPatent .form .item .val {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.applyPatent .form .item .val input {
+  width: 100%;
+}
+.applyPatent .form .confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 268rpx;
+	height: 84rpx;
+	background: #18425a;
+	border-radius: 10rpx;
+  font-family: SourceHanSansCN-Medium;
+	font-size: 44rpx;
+  color: #ffffff;
+  margin: 100rpx auto 0;
+}

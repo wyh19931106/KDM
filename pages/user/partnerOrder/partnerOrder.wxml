@@ -1,0 +1,17 @@
+<!--pages/user/partnerOrder/partnerOrder.wxml-->
+<view class="partnerOrder">
+  <view class="table">
+    <view class="th">
+      <view class="td td1">成交人名称</view>
+      <view class="td td2">成交项目</view>
+      <view class="td td3">数量</view>
+      <view class="td td4">日期</view>
+    </view>
+    <view class="tr" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="td td1">凯小盟{{index}}</view>
+      <view class="td td2">美国商标注册</view>
+      <view class="td td3">{{index}}</view>
+      <view class="td td4">2019/7/19</view>
+    </view>
+  </view>
+</view>

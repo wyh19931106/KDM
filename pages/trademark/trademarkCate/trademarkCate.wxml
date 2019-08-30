@@ -1,0 +1,16 @@
+<!--pages/trademark/trademarkCate/trademarkCate.wxml-->
+<view class="trademarkCate content">
+  <view class="title">商品/服务列表：</view>
+  <view class="list">
+    <view class="item">4501-安全保卫咨询</view>
+    <view class="item">4502-家务服务</view>
+    <view class="item">4503-服装出租</view>
+    <view class="item">4505-殡仪</view>
+    <view class="item">4506-交友服务</view>
+    <view class="item">4506-域名注册（法律服务）</view>
+    <view class="item">4506-替代性纠纷解决服务</view>
+    <view class="item">4506-知识产权咨询</view>
+    <view class="item">4506-知识产权许可</view>
+    <view class="item">4506-诉讼服务</view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/user/favTrademarkCate/favtrademarkCate.wxml-->
+<view class="content favtrademarkCate">
+  <view class="title">我收藏的商标类别</view>
+  
+  <view class="list"> 
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}" data-to="{{'../../category/trademarkDetails/trademarkDetails?type='+index}}" bindtap="openWin">
+      <view class="no">20190429</view>
+      <view class="txt">01 化学制剂、肥料</view>
+      <view class="del">取消收藏</view>
+    </view>
+  </view>
+
+  <view class="fixed_b">
+    <view class="l" bindtap="exportShow">导出</view>
+    <view class="r" bindtap="shareShow">分享</view>
+  </view>
+  <!-- 导出 -->
+  <v-exportWin show="{{export_show}}" email="{{email}}" bind:exportHide="exportHide" bind:exportInput="exportInput"></v-exportWin>
+  
+  <!-- 分享 -->
+  <v-shareWin show="{{share_show}}" bind:shareHide="shareHide"></v-shareWin>
+</view>

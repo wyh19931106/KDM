@@ -1,0 +1,82 @@
+/* pages/school/articleList/articleList.wxss */
+.articleList {
+  width: 100%;
+  /* padding-top: 90rpx; */
+}
+.articleList .top_search {
+  /* position: fixed;
+  top: 10rpx;
+  left: 0;
+  z-index: 9; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 30rpx;
+  background: #ffffff;
+  margin-top: 10rpx;
+}
+.articleList .top_search .input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 30rpx;
+  text-align: center;
+  border-top: 1rpx solid #e9e9e9;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.articleList .top_search .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 245rpx;
+  background: #18425a;
+  color: #ffffff;
+}
+.articleList .list {
+  width: 100%;
+}
+.articleList .list .item {
+  padding: 15rpx 25rpx;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.articleList .list .item .tit {
+  font-family: SourceHanSansCN-Medium;
+	font-size: 28rpx;
+  color: #18425a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.articleList .list .item .inf {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+  line-height: 36rpx;
+  color: #636363;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.articleList .list .item .count {
+  display: flex;
+  justify-content: space-between;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 22rpx;
+  color: #a2a2a2;
+  margin-top: 15rpx;
+}
+.articleList .list .item .count view {
+  display: flex;
+  align-items: center;
+}
+.articleList .list .item .count view image {
+  width: 30rpx;
+  height: auto;
+  margin-right: 10rpx;
+}

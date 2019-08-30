@@ -1,0 +1,42 @@
+<view class="content index">
+  <image class="top_show" src="../../../images/img1.png" mode="widthFix"></image>
+
+  <view class="handle">
+    <view class="handle_t" data-to="../trademarkQuery/trademarkQuery" bindtap="changeTab">
+      <image src="../../../images/handle1.png" mode="widthFix" class="handle1"></image>
+    </view>
+    <view class="handle_b">
+      <view class="l">
+        <image src="../../../images/handle2.png" mode="widthFix" class="handle2" data-to="../patent/patent" bindtap="changeTab"></image>
+        <image src="../../../images/handle3.png" mode="widthFix" class="handle3" data-to="../category/category" bindtap="changeTab"></image>
+      </view>
+      <view class="r">
+        <!-- <image src="../../../images/handle4.png" mode="widthFix" class="handle4" data-to="../../user/cardAiCode/cardAiCode" bindtap="openWin"></image> -->
+        <image src="../../../images/handle5.png" mode="widthFix" class="handle4" data-to="../../school/articleList/articleList" bindtap="openWin"></image>
+      </view>
+    </view>
+    
+  </view>
+  <view class="fixed_right">
+    <button open-type="contact" class="kf" hover-class="none" bindcontact="handleContact"><image src="../../../images/icon_kf.png" mode="widthFix"></image></button>
+    <!-- <view class="kf">
+      <image src="../../../images/icon_kf.png" mode="widthFix"></image>
+    </view> -->
+    <view class="online" bindtap="bindTel">
+      <image src="../../../images/icon_tel.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class="fixed_right_tel" wx:if="{{show_tel}}">
+    <view class="item no">400-685-9993</view>
+    <view class="item call" bindtap="bindCall">呼叫</view>
+    <view class="item cancel" bindtap="bindCancel">取消</view>
+  </view>
+  
+  <view class="hint">
+    <view>凯德盟知识产权</view>
+    <view>涉外知识产权大型机构 全国12+连锁品牌</view>
+    <view>服务热线：400-685-9993</view>
+  </view>
+
+</view>

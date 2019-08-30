@@ -1,0 +1,104 @@
+<!--pages/user/cardAi/cardAi.wxml-->
+<view class="cardAi">
+  <view class="form">
+    <!-- <view class="title">
+      <view class="edit">编辑</view>
+      <view class="preview" data-to="{{'../cardAiCode/cardAiCode?user_id='+user_id}}" bindtap="openWin">预览</view>
+    </view> -->
+
+    <view class="tr">
+      <view class="td txt">头像</view>
+      <view class="td inf">
+        <view class="val">
+          <!-- <text>上传200*200</text> -->
+          <image src="../../../images/img_member.png" mode="widthFix"></image>
+        </view>
+        <!-- <view class="btn">上传</view> -->
+      </view>
+    </view>
+    <view class="tr">
+      <view class="td txt">姓名</view>
+      <view class="td inf">
+        <view class="val">
+          赵书群
+        </view>
+        <!-- <view class="btn">编辑</view> -->
+      </view>
+    </view>
+    <view class="tr">
+      <view class="td txt">公司</view>
+      <view class="td inf">
+        <view class="val">
+          凯德盟知识产权
+        </view>
+        <!-- <view class="btn">编辑</view> -->
+      </view>
+    </view>
+    <view class="tr">
+      <view class="td txt">职位</view>
+      <view class="td inf">
+        <view class="val">
+          新媒体运营
+        </view>
+        <!-- <view class="btn">编辑</view> -->
+      </view>
+    </view>
+    <view class="tr">
+      <view class="td txt">电话</view>
+      <view class="td inf">
+        <view class="val">
+          15118110255
+        </view>
+        <!-- <view class="btn">编辑</view> -->
+      </view>
+    </view>
+    <view class="tr">
+      <view class="td txt">QQ</view>
+      <view class="td inf">
+        <view class="val">
+          1920437861
+        </view>
+        <!-- <view class="btn">编辑</view> -->
+      </view>
+    </view>
+    <view class="tr">
+      <view class="td txt">邮箱</view>
+      <view class="td inf">
+        <view class="val">
+          1920437861@qq.com
+        </view>
+        <!-- <view class="btn">编辑</view> -->
+      </view>
+    </view>
+    <view class="company">公司简介</view>
+    <view class="company_inf">凯德盟创立于2010年，整合全球专业律师，拥有8年的操作经验，致力于为创业者及中小微企业提供高效的、低价、专业的品牌知识产权咨询、法律服务。凯德盟是国际知识产权官方合作机构、国家商标局备案机构，专注国际商标注册、专利申请等。</view>
+    <!-- <view class="tr">
+      <view class="td txt">公司简介</view>
+      <view class="td inf">
+        <view class="val">
+          公司成立于2010年，专注商标
+          公司成立于2010年，专注商标
+        </view>
+        <view class="btn">编辑</view>
+      </view>
+    </view> -->
+    
+  </view>
+  <!-- <view class="count">
+    <view class="look">
+      <image src="../../../images/icon_look.png" mode="widthFix"></image>
+      <view class="txt">人气：2564</view>
+    </view>
+    <view class="zan">
+      <image src="../../../images/icon_zan.png" mode="widthFix"></image>
+      <view class="txt">靠谱：5451</view>
+    </view>
+  </view> -->
+  <view class="fixed_b">
+    <view class="l" data-to="{{'../cardAiCode/cardAiCode?user_id='+user_id}}" bindtap="openWin">生成二维码海报</view>
+    <view class="r" bindtap="shareShow">分享</view>
+  </view>
+  
+  <!-- 分享 -->
+  <v-shareWin show="{{share_show}}" bind:shareHide="shareHide"></v-shareWin>
+</view>

@@ -1,0 +1,44 @@
+<!--pages/user/partnerTeam/partnerTeam.wxml-->
+<view class="partnerTeam">
+  <view class="top_count">
+    <view class="l">
+      <view class="item">团队数据汇总</view>
+      <view class="item">成交订单总数：35</view>
+      <view class="item">收藏总数：269</view>
+    </view>
+    <view class="l">
+      <view class="item">分享数合计：255  </view>
+      <view class="item">点击数合计：546</view>
+      <view class="item">沟通数合计：156</view>
+    </view>
+  </view>
+  <view class="table">
+    <view class="th">
+      <view class="td td1">名称</view>
+      <view class="td td2">具体数据</view>
+    </view>
+    <view class="tr" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="td td1">名称</view>
+      <view class="td td2">
+        <view class="item">
+          <view class="val">进团时间：2019-07-15</view>
+          <view class="val">分享：58</view>
+        </view>
+        <view class="item">
+          <view class="val">沟通：26</view>
+          <view class="val">点击：87</view>
+          <view class="val">收藏：45</view>
+        </view>
+        <view class="item">
+          <view class="val">成交：21</view>
+          <view class="val del">删除成员</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="bottom_fixed">
+    <view class="l">全选</view>
+    <view class="r">邀请成员</view>
+  </view>
+</view>

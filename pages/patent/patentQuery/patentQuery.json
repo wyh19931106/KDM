@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "全球专利检索",
+  "usingComponents": {
+    "v-countryWin": "../../component/countryWin/countryWin",
+    "v-resultNull": "../../component/resultNull/resultNull"
+  }
+}

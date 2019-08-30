@@ -1,0 +1,30 @@
+<!--pages/user/applyPatent/applyPatent.wxml-->
+<view class="applyPatent content">
+  <view class="form">
+    <view class="item">
+      <view class="txt">您要注册的商标名</view>
+      <view class="val">
+        <input type="text" placeholder="请输入商标名" placeholder-style="color: #9a9a9a;" value="{{title}}"/>
+      </view>
+    </view>
+    <view class="item">
+      <view class="txt">手机</view>
+      <view class="val">
+        <input type="text" placeholder="请输入手机号" placeholder-style="color: #9a9a9a;" value="{{mobile}}"/>
+      </view>
+    </view>
+    <view class="item">
+      <view class="txt">QQ</view>
+      <view class="val">
+        <input type="text" placeholder="请输入QQ" placeholder-style="color: #9a9a9a;" value="{{qq}}"/>
+      </view>
+    </view>
+    <view class="item">
+      <view class="txt">姓名</view>
+      <view class="val">
+        <input type="text" placeholder="请输入姓名" placeholder-style="color: #9a9a9a;" value="{{name}}"/>
+      </view>
+    </view>
+    <view class="confirm">提交</view>
+  </view>
+</view>

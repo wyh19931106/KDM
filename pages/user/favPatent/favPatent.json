@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "v-exportWin": "../../component/exportWin/exportWin",
+    "v-shareWin": "../../component/shareWin/shareWin"
+  }
+}

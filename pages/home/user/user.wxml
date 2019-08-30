@@ -1,0 +1,82 @@
+<!--pages/user/user.wxml-->
+<view class="content user">
+
+  <view class="top_show">
+    <view class="inf">
+      <view class="avatar" bindtap="selectImg"><image src="{{pic}}" mode="widthFix"></image></view>
+      <view class="c">
+        <view class="name">凯德盟</view>
+        <view class="tel">未绑定手机号</view>
+      </view>
+      <view class="bind_tel" bindtap="mobileShow">绑定手机</view>
+    </view>
+  </view>
+
+  <view class="handle_list">
+    <!-- <view class="item" data-to="../../user/favTrademark/favTrademark" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user11.png" mode="widthFix"></image>
+      <text class="c">优惠券</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view> -->
+    <view class="item" data-to="../../user/favTrademark/favTrademark" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user1.png" mode="widthFix"></image>
+      <text class="c">我收藏的商标</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="item" data-to="../../user/favTrademarkCate/favTrademarkCate" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user2.png" mode="widthFix"></image>
+      <text class="c">我收藏的商标类别</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="item" data-to="../../user/favProductCate/favProductCate" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user3.png" mode="widthFix"></image>
+      <text class="c">我的商品分类</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="item" data-to="../../user/favPatent/favPatent" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user8.png" mode="widthFix"></image>
+      <text class="c">我收藏的专利</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="item" data-to="../../user/applyTrademark/applyTrademark" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user4.png" mode="widthFix"></image>
+      <text class="c">我要注册商标</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="item" data-to="../../user/trademarkTransfer/trademarkTransfer" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user5.png" mode="widthFix"></image>
+      <text class="c">商标购买/转让</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="item" data-to="../../user/applyPatent/applyPatent" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user6.png" mode="widthFix"></image>
+      <text class="c">申请专利、版权</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="item" data-to="../../user/cardAi/cardAi" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user9.png" mode="widthFix"></image>
+      <text class="c">我的AI名片</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <!-- <view class="item" data-to="../../user/applyPartner/applyPartner" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user10.png" mode="widthFix"></image>
+      <text class="c">合伙人计划</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view> -->
+    <view class="item" data-to="../../user/partner/partner" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user10.png" mode="widthFix"></image>
+      <text class="c">合伙人计划</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="item" data-to="../../user/connectUs/connectUs" bindtap="openWin">
+      <image class="l" src="../../../images/icon_user7.png" mode="widthFix"></image>
+      <text class="c">联系客服</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <!-- 绑定手机号 -->
+  <v-bindMobile show="{{mobile_show}}" bind:myevent="changeShow">
+
+  </v-bindMobile>
+</view>

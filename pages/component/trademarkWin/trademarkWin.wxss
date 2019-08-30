@@ -1,0 +1,104 @@
+/* pages/component/trademarkWin/trademarkWin.wxss */
+.trademark_window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  z-index: 99;
+}
+.trademark_window .window_box {
+  position: absolute;
+  bottom: 200rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 640rpx;
+	height: 554rpx; 
+  overflow: hidden;
+  background-color: #f8f8f8;
+	box-shadow: 0px 0px 9rpx 2rpx rgba(0, 0, 0, 0.3);
+}
+.trademark_window .window_box .title {
+  height: 70rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.trademark_window .window_box .title view {
+  display: flex;
+  align-items: center;
+  width: 214rpx;
+  height: 70rpx;
+}
+.trademark_window .window_box .title .cancel {
+  background: #ffffff;
+  font-family: SourceHanSansCN-Normal;
+  color: #9a9a9a;
+  padding-left: 50rpx;
+}
+.trademark_window .window_box .title .confirm {
+  justify-content: flex-end;
+  padding-right: 50rpx;
+}
+
+.trademark_window .window_box .infor_con {
+  display: flex;
+  width: 100%;
+  height: 448rpx;
+  margin-top: 15rpx;
+}
+.trademark_window .window_box .infor_con .prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rpx;
+  height: 448rpx;
+}
+.trademark_window .window_box .infor_con .prev image {
+  width: 20rpx;
+  height: auto;
+}
+.trademark_window .window_box .infor_con .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rpx;
+  height: 448rpx;
+}
+.trademark_window .window_box .infor_con .next image {
+  width: 20rpx;
+  height: auto;
+}
+.trademark_window .window_box .infor_con .infor_box {
+  width: 540rpx;
+  height: 448rpx;
+  background: #ffffff;
+}
+.trademark_window .window_box .infor_con .infor_box .slide_item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.trademark_window .window_box .infor_con .infor_box .slide_item .item {
+  width: 180rpx;
+	height: 64rpx;
+  border: solid 2rpx #e9e9e9;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+  color: #9a9a9a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rpx;
+  overflow: hidden;
+}
+.trademark_window .window_box .infor_con .infor_box .slide_item .item:nth-child(-n+3) {
+  margin-top: 0;
+}
+.trademark_window .window_box .infor_con .infor_box .slide_item .item:nth-child(3n+2) {
+  border-left: none;
+  border-right: none;
+}

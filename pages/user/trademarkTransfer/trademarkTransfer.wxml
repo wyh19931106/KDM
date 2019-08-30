@@ -1,0 +1,19 @@
+<!--pages/user/trademarkTransfer/trademarkTransfer.wxml-->
+<view class="trademarkTransfer content">
+  <view class="title">商标购买/转让</view>
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{item}}" data-id='{{item}}'>
+      <view class="img"><image src="../../../images/icon_logo.jpg" mode="widthFix"></image></view>
+      <view class="inf">
+        <view class="tit">CADMON</view>
+        <view class="cate">35126686（09类 科学仪器）</view>
+        <view class="company">凯德盟有限公司</view>
+        <view class="at">2018-12-15</view>
+        <view class="status">已注册</view>
+      </view>
+      <view class="transfer">
+        <text data-ind="{{index}}">购买/转让</text>
+      </view>
+    </view>
+  </view>
+</view>

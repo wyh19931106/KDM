@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "知产学堂",
+  "usingComponents": {
+    "v-resultNull": "../../component/resultNull/resultNull"
+  }
+}

@@ -1,0 +1,64 @@
+<!--pages/trademark/trademarkPlan/trademarkPlan.wxml-->
+<view class="trademarkPlan content">
+
+  <view class="company">
+    <view class="txt">代理机构：</view>
+    <view class="val">深圳市凯德盟文化传播有限公司</view>
+  </view>
+
+  <view class="plan">
+    <view class="tit">商标进度：</view>
+    <view class="plan_list">
+      <view class="item">
+        <text class="time">2012-04-27</text>
+        <text class="txt">商标注册申请中</text>
+      </view>
+      <view class="item">
+        <text class="time">2012-04-27</text>
+        <text class="txt">申请收文</text>
+      </view>
+      <view class="item">
+        <text class="time">2012-05-09</text>
+        <text class="txt">打印受理通知</text>
+      </view>
+      <view class="item">
+        <text class="time">2013-03-19</text>
+        <text class="txt">注册申请初步审定</text>
+      </view>
+      <view class="item">
+        <text class="time">2018-08-16</text>
+        <text class="txt">商标已注册</text>
+      </view>
+      <view class="item">
+        <text class="time">2013-08-16</text>
+        <text class="txt">打印注册证</text>
+      </view>
+      <view class="item">
+        <text class="time">2018-12-13</text>
+        <text class="txt">申请收文</text>
+      </view>
+      <view class="item">
+        <text class="time">2019-01-19</text>
+        <text class="txt">核算证明打印发送</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="fixed_b">
+    <view class="l" bindtap="alertShow">添加收藏</view>
+    <view class="r">人工查询</view>
+  </view>
+
+  <!-- 提示弹窗 -->
+  <view class="select_win alert_win" wx:if="{{alert_show}}">
+    <view class="title">
+      <view class="cancel" bindtap="alertHide">取消</view>
+      <view class="confirm">确定</view>
+    </view>
+    <view class="infor_con">
+      <view>你已收藏商标类别3个</view>
+      <view>请到“个人中心’查看</view>
+    </view>
+  </view>
+
+</view>

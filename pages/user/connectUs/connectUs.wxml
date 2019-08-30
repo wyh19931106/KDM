@@ -1,0 +1,9 @@
+<!--pages/user/connectUs/connectUs.wxml-->
+<view class="connectUs content">
+  <view class="hint">客服工作时间：周一至周日：8:00~22:00</view>
+  <view class="inf">
+    <image src="../../../images/icon_connect.png" mode="widthFix"></image>
+    <view class="tel">服务热线：400-685-9993</view>
+    <view class="call" data-tel="4006859993" bindtap="bindCall">电话客服</view>
+  </view>
+</view>

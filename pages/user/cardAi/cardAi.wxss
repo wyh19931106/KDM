@@ -1,0 +1,146 @@
+/* pages/user/cardAi/cardAi.wxss */
+.cardAi {
+  padding-bottom: 150rpx;
+}
+.cardAi .form {
+  margin: 15rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+  border-top: 1rpx solid #e9e9e9;
+  border-left: 1rpx solid #e9e9e9;
+}
+.cardAi .form .title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 76rpx;
+  background: #f8f8f8;
+  border-bottom: 1rpx solid #e9e9e9;
+  border-right: 1rpx solid #e9e9e9;
+  color: #18425a;
+}
+.cardAi .form .title view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185rpx;
+  height: 100%;
+}
+.cardAi .form .tr {
+  display: flex;
+  width: 100%;
+  min-height: 76rpx;
+  height: auto;
+  color: #636363;
+  border-bottom: 1rpx solid #e9e9e9;
+  border-right: 1rpx solid #e9e9e9;
+}
+.cardAi .form .tr .txt {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185rpx;
+  border-right: 1rpx solid #e9e9e9;
+}
+.cardAi .form .tr .inf {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.cardAi .form .tr .inf .val {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cardAi .form .tr .inf .val image {
+  width: 150rpx;
+  height: auto;
+}
+.cardAi .form .tr .inf .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100rpx;
+  color: #18425a;
+}
+.cardAi .form .company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 76rpx;
+  color: #636363;
+  border-bottom: 1rpx solid #e9e9e9;
+  border-right: 1rpx solid #e9e9e9;
+}
+.cardAi .form .company_inf {
+  padding: 20rpx 30rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+  color: #636363;
+  line-height: 36rpx;
+  border-bottom: 1rpx solid #e9e9e9;
+  border-right: 1rpx solid #e9e9e9;
+}
+.cardAi .count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 180rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+  color: #636363;
+}
+.cardAi .count view {
+  width: 220rpx;
+  text-align: center;
+}
+.cardAi .count view image {
+  width: 48rpx;
+  height: auto;
+}
+.cardAi .creat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 268rpx;
+	height: 84rpx;
+	background: #18425a;
+	border-radius: 10rpx;
+  color: #ffffff;
+  margin: 20rpx auto 200rpx;
+  font-family: SourceHanSansCN-Medium;
+	font-size: 32rpx;
+}
+.cardAi .fixed_b {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100rpx;
+  background: #18425a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.cardAi .fixed_b view {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+}
+.cardAi .fixed_b .l {
+  padding-left: 30rpx;
+}
+.cardAi .fixed_b .r {
+  justify-content: flex-end;
+  padding-right: 30rpx;
+}

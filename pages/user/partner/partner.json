@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "合伙人计划",
+  "usingComponents": {
+    "v-shareWin": "../../component/shareWin/shareWin"
+  }
+}

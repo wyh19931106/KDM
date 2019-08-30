@@ -1,0 +1,18 @@
+<!--pages/school/articleDetails/articleDetails.wxml-->
+<view class="articleDetails">
+  <view class="title">注册一个美国商标大概需要多少钱?</view>
+  <view class="time">2019/7/19</view>
+  <view class="inf">2018年4月16日 - 注册一个美国商标大概需要多少钱?商标在美国被采用使用在先的保护原则,所以在申请注册商标时必须要同时提交使用证明以及在美国使用的日期。那么注。。。
+2018年4月16日 - 注册一个美国商标大概需要多少钱?商标在美国被采用使用在先的保护原则,所以在申请注册商标时必须要同时提交使用证明以及在美国使用的日期。那么注。。。
+2018年4月16日 - 注册一个美国商标大概需要多少钱?商标在美国被采用使用在先的保护原则,所以在申请注册商标时必须要同时提交使用证明以及在美国使用的日期。那么注。。。
+2018年4月16日 - 注册一个美国商标大概需要多少钱?商标在美国被采用使用在先的保护原则,所以在申请注册商标时必须要同时提交使用证明以及在美国使用的日期。那么注。。。</view>
+  <view class="count">
+    <view class="praise">
+      <image src="../../../images/icon_praise.png" mode="widthFix"></image>127
+    </view>
+    <view class="share" bindtap="shareShow">
+      <image src="../../../images/icon_share.png" mode="widthFix"></image>127
+    </view>
+  </view>
+  <v-shareWin show="{{share_show}}" bind:shareHide="shareHide"></v-shareWin>
+</view>

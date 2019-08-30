@@ -1,0 +1,12 @@
+<!--pages/category/trademarkProduct/trademarkProduct.wxml-->
+<view class="content trademarkProduct">
+  <view class="title">0101 工业气体，单质</view>
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{fav}}" data-ind="{{index}}" bindtap="bindSelect">
+      <image class="tick" wx:if="{{item.fav}}" src="../../../images/icon_tick_y.png" mode="widthFix"></image>
+      <image class="tick" wx:else src="../../../images/icon_tick.png" mode="widthFix"></image>
+      <text class="txt">{{item.txt}}</text>
+    </view>
+  </view>
+  <view class="fixed_btn">添加到我的商品分类 1个</view>
+</view>

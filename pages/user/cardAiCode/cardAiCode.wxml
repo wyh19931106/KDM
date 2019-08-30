@@ -1,0 +1,36 @@
+<!--pages/user/cardAiCode/cardAiCode.wxml-->
+<view class="cardAiCode">
+  <view class="card_con">
+    <view class="card_box">
+      <image src="../../../images/card_bg.png" mode="widthFix" class="bg"></image>
+      <view class="infor">
+        <image class="logo" src="../../../images/icon_logo.png" mode="widthFix"></image>
+        <view class="left">
+          <image src="../../../images/img_member.png" mode="widthFix" class="avatar"></image>
+          <view class="l_inf">
+            <view class="name">赵书群</view>
+            <view class="obj">新媒体运营</view>
+          </view>
+        </view>
+
+        <view class="right">
+          <view class="company">深圳凯德盟知识产权代理有限公司</view>
+          <view class="mem_inf">
+            <view class="name">赵书群</view>
+            <view class="obj">新媒体运营</view>
+          </view>
+          <view class="r_inf">
+            <view class="item addr">地址：深圳福田CBD卓越世纪中心3号楼7楼</view>
+            <view class="item tel">电话：15118110255</view>
+            <view class="item qq">QQ：1920437861</view>
+            <view class="item email">邮箱：1920437861 @qq.com</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <image src="../../../images/img_code.png" mode="widthFix" class="code"></image>
+    <view class="hint">长按扫描小程序，收下名片</view>
+  </view>
+  
+  <view class="save">保存海报</view>
+</view>

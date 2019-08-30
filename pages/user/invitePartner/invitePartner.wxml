@@ -1,0 +1,31 @@
+<!--pages/user/invitePartner/invitePartner.wxml-->
+<view class="invitePartner">
+  <view class="title">欢迎成为XXX合伙人</view>
+  <view class="form">
+    <view class="item">
+      <view class="txt">姓名</view>
+      <view class="val">
+        <input type="text" placeholder="请输入姓名" placeholder-style="color: #9a9a9a;" value="{{title}}"/>
+      </view>
+    </view>
+    <view class="item">
+      <view class="txt">电话</view>
+      <view class="val">
+        <input type="text" placeholder="请输入电话号" placeholder-style="color: #9a9a9a;" value="{{mobile}}"/>
+      </view>
+    </view>
+    <view class="item">
+      <view class="txt">QQ</view>
+      <view class="val">
+        <input type="text" placeholder="请输入QQ" placeholder-style="color: #9a9a9a;" value="{{qq}}"/>
+      </view>
+    </view>
+    <view class="item">
+      <view class="txt">邮箱</view>
+      <view class="val">
+        <input type="text" placeholder="请输入邮箱" placeholder-style="color: #9a9a9a;" value="{{name}}"/>
+      </view>
+    </view>
+    <view class="confirm">提交申请</view>
+  </view>
+</view>

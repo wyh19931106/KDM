@@ -1,0 +1,80 @@
+<!--pages/patent/patentDetails/patentDetails.wxml-->
+<view class="patentDetails">
+  <view class="title">USH2209H</view>
+  <view class="table">
+
+    <view class="tr">
+      <view class="td td1 txt">专利标题</view>
+      <view class="td td2 val">Large area metallization pretreatment and surface activation system</view>
+    </view>
+
+    <view class="tr">
+      <view class="td td1 txt">公开(公告)号</view>
+      <view class="td td2 val">USH2209H</view>
+      <view class="td td3 txt">申请日</view>
+      <view class="td td4 txt time">2018/7/12</view>
+    </view>
+
+    <view class="tr">
+      <view class="td td1 txt">申请号</view>
+      <view class="td td2 val">US82580004</view>
+      <view class="td td3 txt">公开(公告)日</view>
+      <view class="td td4 txt time">2018/7/13</view>
+    </view>
+
+    <view class="tr">
+      <view class="td td1 txt">优先权</view>
+      <view class="td td2 val">US82580004 2004-04-14</view>
+    </view>
+
+    <view class="tr">
+      <view class="td td1 txt">申请人</view>
+      <view class="td td2 val">US NAVY</view>
+    </view>
+
+    <view class="tr">
+      <view class="td td1 txt">发明人 </view>
+      <view class="td td2 val">LEONHARDT DARRIN , WALTON SCOTT G , 
+MEGER ROBERT A , MURATORE CHRISTOPHER</view>
+    </view>
+
+    <view class="tr">
+      <view class="td td1 txt">IPC分类号  </view>
+      <view class="td td2 val">C23C14/32 ; B05D3/06 ; C23C14/02 ; C23C14/20 ; 
+C23C14/34 ; C23C14/35 ; C23C16/00 ; H05B31/26 </view>
+    </view>
+
+    <view class="tr">
+      <view class="td txt">主分类号</view>
+      <view class="td val">C23C14/32 </view>
+      <view class="td txt">CPC分类号</view>
+      <view class="td val">C23C14/022 , C23C14/205</view>
+    </view>
+
+    <view class="tr nav">
+      <view class="{{type==1?'td td1 active':'td td1'}}" data-type="1" bindtap="navChange">摘要 </view>
+      <view class="{{type==2?'td td2 active':'td td2'}}" data-type="2" bindtap="navChange">专利附图 </view>
+      <view class="{{type==3?'td td3 active':'td td3'}}" data-type="3" bindtap="navChange">信息查询</view>
+      <view class="{{type==4?'td td4 active':'td td4'}}" data-type="4" bindtap="navChange">IPC结构图谱</view>
+      <view class="{{type==5?'td td5 active':'td td5'}}" data-type="5" bindtap="navChange">国家或地区</view>
+    </view>
+
+  </view>
+  <view class="nav_inf" wx:if="{{type==1}}">
+    手持式旋转器包括壳体，支架，滚珠轴承和文具。文具用品设置在外壳上，并包括铅笔，笔，记号笔，荧光笔，蜡笔，刷子，手写笔，压模，橡皮擦和/或粉笔。滚珠轴承设置在支架中，支架设置在壳体中。在一个实施例中，手持式旋转器包括设置在支架和滚珠轴承上的帽。在一个实施例中，手持式旋转器包括支架，滚珠轴承和文具用品。在一个实施例中，文具用品是由离散角度间隔开的多个文具用品。使用者围绕滚珠轴承的旋转轴旋转手持式旋转器，旋转轴上的一个或多个物品。
+  </view>
+  <view class="nav_inf"  wx:if="{{type==2}}">
+    <image src="../../../images/img1.png" mode="widthFix" bindtap="previewImage"></image>
+    <image src="../../../images/img_logo.jpg" mode="widthFix" bindtap="previewImage"></image>
+  </view>
+  <view class="nav_inf"  wx:if="{{type==3}}">
+    手持式旋转器包括壳体，支架，滚珠轴承和文具。文具用品设置在外壳上，并包括铅笔，笔，记号笔，荧光笔，蜡笔，刷子，手写笔，压模，橡皮擦和/或粉笔。滚珠轴承设置在支架中，支架设置在壳体中。在一个实施例中，手持式旋转器包括设置在支架和滚珠轴承上的帽。在一个实施例中，手持式旋转器包括支架，滚珠轴承和文具用品。在一个实施例中，文具用品是由离散角度间隔开的多个文具用品。使用者围绕滚珠轴承的旋转轴旋转手持式旋转器，旋转轴上的一个或多个物品。
+  </view>
+  <view class="nav_inf"  wx:if="{{type==4}}">
+    <image src="../../../images/img1.png" mode="widthFix" bindtap="previewImage"></image>
+    <image src="../../../images/img_logo.jpg" mode="widthFix" bindtap="previewImage"></image>
+  </view>
+  <view class="nav_inf"  wx:if="{{type==5}}">
+    <text>国家： 中国\n地区： 深圳</text>
+  </view>
+</view>

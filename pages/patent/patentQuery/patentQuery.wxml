@@ -1,0 +1,37 @@
+<!--pages/patent/patentQuery/patentQuery.wxml-->
+<view class="patentQuery">
+  <view class="query">
+    <view class="country" bindtap="countryShow"><text>国家</text></view>
+    <picker class="cate" bindchange="bindTypeChange" value="{{type_index}}" range="{{type.China}}">
+      <text>{{type.China[type_index]}}</text>
+    </picker>
+    <!-- <view class="cate" bindtap=""><text>类别</text></view> -->
+    <input class="text" type="text" placeholder="请输入关键词" placeholder-style="color: #9a9a9a;"/>
+    <view class="btn" bindtap="bindResult"><icon type="search" size="12" color="#ffffff" />查询</view>
+  </view>
+
+  <view class="table">
+    <view class="th">
+      <view class="td1">专利公告号</view>
+      <view class="td2">专利标题</view>
+      <view class="td3">图片</view>
+    </view>
+    <view class="tr" wx:for="{{list}}" wx:key="{{index}}" data-id="{{index}}" bindtap="openWin">
+      <view class="td1">UA115187U</view>
+      <view class="td2">
+        <view class="txt">Production of quinolinoo1*55 benzodiazepine </view>
+        <text class="fav_btn">收藏\n专利</text>
+      </view>
+      <view class="td3" catchtap="previewImage">
+        <image src="../../../images/icon_country1.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 查询结果 -->
+  <v-resultNull show="{{result_show}}" bind:resultHide="resultHide"></v-resultNull>
+
+  <!-- 国家选择 -->
+  <v-countryWin show="{{country_show}}" bind:countryHide="countryHide"></v-countryWin>
+
+</view>

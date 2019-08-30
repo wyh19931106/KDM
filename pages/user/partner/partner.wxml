@@ -1,0 +1,60 @@
+<!--pages/user/partner/partner.wxml-->
+<view class="partner">
+  <view class="top_show">
+    <view class="top_inf">
+      <view class="t_l">
+        <view class="avatar"><image src="../../../images/icon_avatar.png" mode="widthFix"></image></view>
+        <view class="name">凯德盟</view>
+      </view>
+      <view class="t_r">积分: 6888</view>
+    </view>
+    <view class="handle">
+      <view class="handle_item">
+        <view class="txt">点击数</view>
+        <view class="no">5125</view>
+      </view>
+      <view class="handle_item">
+        <view class="txt">收藏数</view>
+        <view class="no">556</view>
+      </view>
+      <view class="handle_item">
+        <view class="txt">沟通数</view>
+        <view class="no">158</view>
+      </view>
+    </view>
+  </view>
+  <view class="count">
+    <view class="count_item" data-to="../partnerOrder/partnerOrder" bindtap="openWin">成交订单: 49笔</view>
+    <view class="count_item" data-to="../partnerTeam/partnerTeam" bindtap="openWin">团队管理：4人</view>
+    <view class="count_item" data-to="../partnerShare/partnerShare" bindtap="openWin">我的分享：98次</view>
+  </view>
+  <view class="news">
+    <text class="txt">知产\n头条</text>
+    <swiper class="news_swiper" autoplay="true" interval="3000" vertical="true" circular="true">
+        <swiper-item class="slide_item" wx:for="{{list}}" wx:key>
+          <view class="val">美国商标到期续展费用多少美国商标注册所需资料/流程怎样？ </view>
+          <image src="../../../images/icon_right.png" mode="widthFix"></image>
+        </swiper-item>
+      </swiper>
+  </view>
+  <view class="handle_list">
+    <view class="handle_item">
+      <text class="txt">签到打卡</text>
+      <image src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="handle_item">
+      <text class="txt">我的足迹</text>
+      <image src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+    <view class="handle_item">
+      <text class="txt">分享指南</text>
+      <image src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="share" bindtap="shareShow">
+    <image src="../../../images/img_share.png" mode="widthFix"></image>
+  </view>
+
+  <!-- 分享 -->
+  <v-shareWin show="{{share_show}}" bind:shareHide="shareHide"></v-shareWin>
+</view>

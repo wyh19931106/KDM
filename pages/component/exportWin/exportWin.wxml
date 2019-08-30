@@ -1,0 +1,17 @@
+<!--pages/component/exportWin/exportWin.wxml-->
+<!-- 导出 -->
+  <view class="window export_window" wx:if="{{show}}" bindtap="exportHide">
+    <view class="window_box" catchtap="bindDefault">
+      <view class="tit">
+        <text>导出到邮箱</text>
+        <text>请填写邮箱号</text>
+      </view>
+      <view class="email">
+        <input type="text" placeholder="请输入邮箱号" value="{{email}}" placeholder-style="color: #9a9a9a;" bindinput="emailInput"/>
+      </view>
+      <view class="handle">
+        <text class="cancel" bindtap="exportHide">取消</text>
+        <text class="confirm">确定</text>
+      </view>
+    </view>
+  </view>

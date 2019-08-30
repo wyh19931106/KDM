@@ -1,0 +1,70 @@
+/* pages/user/trademarkTransfer/trademarkTransfer.wxss */
+page {
+  background: #f8f8f8;
+}
+.trademarkTransfer .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: SourceHanSansCN-Medium;
+	font-size: 30rpx;
+  color: #18425a;
+  height: 78rpx;
+  background: #ffffff;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.trademarkTransfer .list {
+  background: #f8f8f8;
+  padding: 15rpx;
+}
+.trademarkTransfer .list .item {
+  display: flex;
+  height: 220rpx;
+  padding: 15rpx;
+  border-radius: 10rpx;
+  background: #ffffff;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.trademarkTransfer .list .item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190rpx;
+  height: 190rpx;
+  overflow: hidden;
+}
+.trademarkTransfer .list .item .img image {
+  width: 100%;
+  height: auto;
+}
+.trademarkTransfer .list .item .inf {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 30rpx;
+  overflow: hidden;
+}
+.trademarkTransfer .list .item .inf view {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+  color: #9a9a9a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.trademarkTransfer .list .item .inf .tit {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 30rpx;
+  color: #18425a;
+}
+.trademarkTransfer .list .item .transfer {
+  width: 130rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+  color: #18425a;
+  text-align: right;
+  padding-top: 5rpx;
+  position: relative;
+}

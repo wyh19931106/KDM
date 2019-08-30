@@ -1,0 +1,16 @@
+<view class="content patent">
+
+  <view class="input">
+    <input type="text" placeholder="您可以输入专利名或专利号或申请人等关键字查询" placeholder-style="color: #9a9a9a;" value="{{keyword}}" bindinput="inputKeyword"/>
+  </view>
+
+  <view class="select">
+    <view class="select_btn" bindtap="bindResult">
+      <icon type="search" size="20" color="#ffffff" />查询
+    </view>
+  </view>
+
+  <!-- 查询结果 -->
+  <v-resultNull show="{{result_show}}" bind:resultHide="resultHide"></v-resultNull>
+  
+</view>

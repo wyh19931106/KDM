@@ -1,0 +1,10 @@
+<!--pages/component/resultNull/resultNull.wxml-->
+<view class="window result_win" wx:if="{{show}}" bindtap="resultHide">
+  <view class="window_box result_box" catchtap="bindDefault">
+    <view class="result_empty">
+      <view class="title">提示</view>
+      <view class="msg">没有查询到相关结果</view>
+      <view class="confirm" bindtap="resultHide">确定</view>
+    </view>
+  </view>
+</view>

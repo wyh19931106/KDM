@@ -1,0 +1,83 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/home/category/category",
+    "pages/home/trademarkQuery/trademarkQuery",
+    "pages/home/patent/patent",
+    "pages/home/user/user",
+    "pages/category/trademark/trademark",
+    "pages/category/trademarkDetails/trademarkDetails",
+    "pages/category/trademarkProduct/trademarkProduct",
+    "pages/category/product/product",
+    "pages/trademark/trademarkQuery/trademarkQuery",
+    "pages/trademark/adviseTrademark/adviseTrademark",
+    "pages/trademark/trademarkDetails/trademarkDetails",
+    "pages/trademark/trademarkPlan/trademarkPlan",
+    "pages/trademark/trademarkCate/trademarkCate",
+    "pages/patent/patentQuery/patentQuery",
+    "pages/patent/patentDetails/patentDetails",
+    "pages/user/favTrademark/favTrademark",
+    "pages/user/favTrademarkCate/favTrademarkCate",
+    "pages/user/favProductCate/favProductCate",
+    "pages/user/favPatent/favPatent",
+    "pages/user/applyTrademark/applyTrademark",
+    "pages/user/applyPatent/applyPatent",
+    "pages/user/trademarkTransfer/trademarkTransfer",
+    "pages/user/connectUs/connectUs",
+    "pages/user/cardAi/cardAi",
+    "pages/user/cardAiCode/cardAiCode",
+    "pages/school/articleList/articleList",
+    "pages/school/articleDetails/articleDetails",
+    "pages/user/applyPartner/applyPartner",
+    "pages/user/invitePartner/invitePartner",
+    "pages/user/partner/partner",
+    "pages/user/partnerOrder/partnerOrder",
+    "pages/user/partnerTeam/partnerTeam",
+    "pages/user/partnerShare/partnerShare"
+  ],
+  "tabBar": {
+    "color": "#636363",
+    "selectedColor": "#18425a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "iconPath": "images/icon_index.png",
+        "selectedIconPath": "images/icon_index_y.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/home/category/category",
+        "iconPath": "images/icon_category.png",
+        "selectedIconPath": "images/icon_category_y.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/home/trademarkQuery/trademarkQuery",
+        "iconPath": "images/icon_trademarkQuery.png",
+        "selectedIconPath": "images/icon_trademarkQuery_y.png",
+        "text": "商标"
+      },
+      {
+        "pagePath": "pages/home/patent/patent",
+        "iconPath": "images/icon_zhuanli.png",
+        "selectedIconPath": "images/icon_zhuanli_y.png",
+        "text": "专利"
+      },
+      {
+        "pagePath": "pages/home/user/user",
+        "iconPath": "images/icon_user.png",
+        "selectedIconPath": "images/icon_user_y.png",
+        "text": "我"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#18425a",
+    "navigationBarTitleText": "凯德盟",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

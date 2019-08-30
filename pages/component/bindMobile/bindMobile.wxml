@@ -1,0 +1,27 @@
+<!--pages/component/bindMobile.wxml-->
+<view class="bindMobile window" wx:if="{{show}}" bindtap="bindCancel">
+  <view class="window_box" catchtap="bindDefault">
+    <view class="title">绑定手机号</view>
+    <view class="cancel" bindtap="bindCancel">
+      <image src="../../../images/icon_close.png" mode="widthFix"></image>
+    </view>
+
+    <view class="form">
+      <view class="item mobile_item">
+        <view class="tit">手机号</view>
+        <view class="val">
+          <input type="number" maxlength="11" value="{{mobile}}" placeholder="请输入手机号码" placeholder-style="color: #9a9a9a;" bindinput="inputMobile"/>
+        </view>
+      </view>
+      <view class="item code_item">
+        <view class="tit">验证码</view>
+        <view class="val">
+          <input type="number" value="{{code}}" placeholder="请输入您获取的验证码" placeholder-style="color: #9a9a9a;" bindinput="inputCode"/>
+          <text class="get_code" bindtap="getCode">{{code_txt}}</text>
+        </view>
+      </view>
+      <view class="confirm" bindtap="bindConfirm">确定</view>
+    </view>
+
+  </view>
+</view>

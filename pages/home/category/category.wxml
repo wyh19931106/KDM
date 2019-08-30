@@ -1,0 +1,62 @@
+<view class="content category">
+
+  <view class="nav">
+    <view class="{{type==1?'item active':'item'}}" data-type="1" bindtap="bindChange">商标分类查询</view>
+    <view class="{{type==2?'item active':'item'}}" data-type="2" bindtap="bindChange">商品分类查询</view>
+  </view>
+
+  <view class="country_list" wx:if="{{type==1}}">
+
+    <view class="item select" data-id="1" bindtap="toTrademark">
+      <image class="l" src="../../../images/icon_country1.png" mode="widthFix"></image>
+      <text class="c">中国商标分类</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+
+    <view class="item" data-id="2" bindtap="toTrademark">
+      <image class="l" src="../../../images/icon_country2.png" mode="widthFix"></image>
+      <text class="c">美国商标分类</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+
+    <view class="item" data-id="3" bindtap="toTrademark">
+      <image class="l" src="../../../images/icon_country3.png" mode="widthFix"></image>
+      <text class="c">欧盟商标分类</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+
+    <view class="item" data-id="4" bindtap="toTrademark">
+      <image class="l" src="../../../images/icon_country4.png" mode="widthFix"></image>
+      <text class="c">国际商标分类</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class=" goodsQuery" wx:if="{{type==2}}">
+
+    <view class="select_box">
+      <view class="select_t">
+        <view class="country item" bindtap="countryShow">
+          <input placeholder="国家（必填）" placeholder-style="color: #9a9a9a;" disabled />
+        </view>
+        <view class="no item">
+          <input type="text" confirm-type="search" placeholder="请输入商品名称如:服装\茶\食品等" placeholder-style="color: #9a9a9a;" value="{{keyword}}" bindinput="inputChange"/>
+        </view>
+      </view>
+    </view>
+
+    <view class="select">
+      <view class="select_btn" bindtap="bindResult">
+        <icon type="search" size="20" color="#ffffff" />查询
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 国家选择 -->
+  <v-countryWin show="{{country_show}}" bind:countryHide="countryHide"></v-countryWin>
+
+  <!-- 查询结果 -->
+  <v-resultNull show="{{result_show}}" bind:resultHide="resultHide"></v-resultNull>
+
+</view>

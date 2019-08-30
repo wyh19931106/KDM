@@ -1,0 +1,64 @@
+/* pages/patent/patentDetails/patentDetails.wxss */
+.patentDetails {
+  width: 100%;
+}
+.patentDetails .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: SourceHanSansCN-Medium;
+	font-size: 30rpx;
+  color: #18425a;
+  height: 78rpx;
+  background: #f8f8f8;
+}
+.patentDetails .table {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+  border-top: 1rpx solid #e9e9e9;
+  border-left: 1rpx solid #e9e9e9;
+}
+.patentDetails .table .tr {
+  display: flex;
+  min-height: 92rpx;
+  height: auto;
+}
+.patentDetails .table .tr .td {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  overflow: hidden;
+  border-bottom: 1rpx solid #e9e9e9;
+  border-right: 1rpx solid #e9e9e9;
+}
+.patentDetails .table .tr .txt {
+  width: 20%;
+  height: auto;
+}
+.patentDetails .table .tr .val {
+  flex: 1;
+  color: #9a9a9a;
+}
+.patentDetails .table .tr .time {
+  color: #9a9a9a;
+}
+.patentDetails .table .nav .td {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.patentDetails .table .nav .active {
+  color: #ffffff;
+  background: #18425a;
+}
+.patentDetails .nav_inf {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 22rpx;
+  padding: 10rpx 20rpx;
+  color: #9a9a9a;
+  line-height: 36rpx;
+}
+.patentDetails .nav_inf image {
+  width: 100%;
+  height: auto;
+}

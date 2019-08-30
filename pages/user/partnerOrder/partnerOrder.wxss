@@ -1,0 +1,32 @@
+/* pages/user/partnerOrder/partnerOrder.wxss */
+.partnerOrder {
+  width: 100%;
+  height: auto;
+}
+.partnerOrder .table .th, .partnerOrder .table .tr {
+  display: flex;
+  width: 100%;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.partnerOrder .table .th {
+  background: #f8f8f8;
+}
+.partnerOrder .table .td {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+  border-right: 1rpx solid #e9e9e9;
+}
+.partnerOrder .table .td:nth-last-child(1) {
+  border-right: none;
+}
+.partnerOrder .table .tr .td {
+  color: #636363;
+}
+.partnerOrder .table .tr .td1 {
+  color: #18425a;
+}

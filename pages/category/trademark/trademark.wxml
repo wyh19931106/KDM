@@ -1,0 +1,8 @@
+<!--pages/category/trademark/trademark.wxml-->
+<view class="trademark">
+  <view class="list">
+    <view class="{{index==0?'item active':'item'}}" wx:for="{{list}}" wx:key="{{item}}" data-type="{{index}}" bindtap="toDetails">  
+      {{item}}
+    </view>
+  </view>
+</view>

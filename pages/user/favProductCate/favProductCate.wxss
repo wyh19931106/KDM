@@ -1,0 +1,70 @@
+/* pages/user/favProductCate/favProductCate.wxss */
+.favProductCate .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: SourceHanSansCN-Medium;
+	font-size: 30rpx;
+  color: #18425a;
+  height: 78rpx;
+  background: #ffffff;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.favProductCate .list {
+  width: 100%;
+  height: auto;
+  padding: 0 10rpx 150rpx;
+}
+.favProductCate .list .item {
+  display: flex;
+  width: 100%;
+  height: 76rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+  color: #636363;
+  margin-bottom: 10rpx;
+  background: #f8f8f8;
+}
+.favProductCate .list .item .no {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200rpx;
+  height: 100%;
+  border-right: 4rpx solid #ffffff;
+}
+.favProductCate .list .item .txt {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.favProductCate .list .item .del {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180rpx;
+  height: 100%;
+  color: #18425a;
+}
+.favProductCate .fixed_b {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100rpx;
+  background: #18425a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.favProductCate .fixed_b view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 200rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+}

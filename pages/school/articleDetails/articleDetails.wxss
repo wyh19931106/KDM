@@ -1,0 +1,45 @@
+/* pages/school/articleDetails/articleDetails.wxss */
+.articleDetails {
+  width: 100%;
+  padding: 40rpx 25rpx;
+}
+.articleDetails .title {
+  font-family: SourceHanSansCN-Medium;
+  text-align: center;
+	font-size: 28rpx;
+  color: #18425a;
+}
+.articleDetails .time {
+  font-family: SourceHanSansCN-Medium;
+	font-size: 26rpx;
+  text-align: center;
+  color: #636363;
+  margin-top: 20rpx;
+}
+.articleDetails .inf {
+  font-family: SourceHanSansCN-Normal;
+	font-size: 24rpx;
+  text-align: center;
+  line-height: 38rpx;
+  color: #636363;
+  margin-top: 20rpx;
+}
+.articleDetails .count {
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.articleDetails .count view {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 22rpx;
+  color: #a2a2a2;
+}
+.articleDetails .count view image {
+  width: 30rpx;
+  height: auto;
+  margin-right: 10rpx;
+}

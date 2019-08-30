@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "商标查询",
+  "usingComponents": {
+    "v-countryWin": "../../component/countryWin/countryWin",
+    "v-trademarkWin": "../../component/trademarkWin/trademarkWin",
+    "v-resultNull": "../../component/resultNull/resultNull"
+  }
+}

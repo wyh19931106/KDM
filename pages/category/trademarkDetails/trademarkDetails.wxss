@@ -1,0 +1,65 @@
+/* pages/category/trademarkDetails/trademarkDetails.wxss */
+.trademarkDetails {
+  width: 100%;
+}
+.trademarkDetails .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 78rpx;
+  background: #f8f8f8;
+  color: #18425a;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 30rpx;
+}
+.trademarkDetails .text {
+  padding: 10rpx 30rpx 20rpx;
+  background: #Ffffff;
+  color: #636363;
+  font-family: SourceHanSansCN-Normal;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  border-bottom: 1rpx solid #eaeaea;
+}
+.trademarkDetails .list {
+  width: 100%;
+  margin-top: 10rpx;
+}
+.trademarkDetails .list .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 108rpx;
+  overflow: hidden;
+  border-bottom: 1rpx solid #eaeaea;
+}
+.trademarkDetails .list .item .no {
+  width: 100rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+  color: #8f8f8f;
+}
+.trademarkDetails .list .item .txt {
+  flex: 1;
+  margin: 0 20rpx;
+  font-family: SourceHanSansCN-Normal;
+	font-size: 28rpx;
+  color: #636363;
+  overflow: hidden;
+	text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+	-o-text-overflow: ellipsis;
+	display: -webkit-box; /*（多行）*/
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.trademarkDetails .list .item .r {
+  width: 15rpx;
+  height: auto;
+}
+.trademarkDetails .list .active {
+  background: #eaeaea;
+}

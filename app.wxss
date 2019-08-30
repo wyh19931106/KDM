@@ -1,0 +1,60 @@
+/**app.wxss**/
+
+ @font-face {
+  font-family: SourceHanSansCN-Bold;
+  src: url('www.zhulinys.com/font/SourceHanSansCN-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: SourceHanSansCN-ExtraLight;
+  src: url('www.zhulinys.com/font/SourceHanSansCN-ExtraLight.otf') format('otf');
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Heavy;
+  src: url('www.zhulinys.com/font/SourceHanSansCN-Heavy.otf') format('otf');
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Light;
+  src: url('www.zhulinys.com/font/SourceHanSansCN-Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Medium;
+  src: url('www.zhulinys.com/font/SourceHanSansCN-Medium.otf') format('otf');
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Normal;
+  src: url('www.zhulinys.com/font/SourceHanSansCN-Normal.otf') format('otf');
+}
+
+ @font-face {
+  font-family: SourceHanSansCN-Regular;
+  src: url('www.zhulinys.com/font/SourceHanSansCN-Regular.otf') format('otf');
+} 
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+view, text, picker, button {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+button::after {
+  border: none;
+}

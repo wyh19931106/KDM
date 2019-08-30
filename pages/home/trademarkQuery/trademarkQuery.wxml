@@ -1,0 +1,61 @@
+<view class="content trademarkQuery">
+  <image class="top_show" src="../../../images/img1.png" mode="widthFix"></image>
+  <view class="select_box">
+    <view class="select_t">
+      <view class="country item" bindtap="countryShow">
+        <input placeholder="国家（必填）" placeholder-style="color: #9a9a9a;" disabled />
+      </view>
+      <view class="no item">
+        <input type="text" confirm-type="search" placeholder="请输入商标名或申请人或注册号" value="{{keyword}}" placeholder-style="color: #9a9a9a;" bindinput="inputKeyword"/>
+        <!-- <image class="camera_btn" src="../../../images/icon_camera.png" mode="widthFix" bindtap="bindCamera"></image> -->
+      </view>
+    </view>
+    <view class="select_b item" bindtap="trademarkShow">
+      <input type="text" placeholder="选择商标或商标类别" placeholder-style="color: #9a9a9a;" disabled/>
+    </view>
+  </view>
+
+  <view class="select">
+    <view class="select_btn" bindtap="bindResult">
+      <icon type="search" size="20" color="#ffffff" />查询
+    </view>
+  </view>
+
+  <view class="fixed_right">
+    <button open-type="contact" class="kf" hover-class="none" bindcontact="handleContact"><image src="../../../images/icon_kf.png" mode="widthFix"></image></button>
+    <!-- <view class="kf">
+      <image src="../../../images/icon_kf.png" mode="widthFix"></image>
+    </view> -->
+    <view class="online" bindtap="bindTel">
+      <image src="../../../images/icon_tel.png" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <view class="fixed_right_tel" wx:if="{{show_tel}}">
+    <view class="item no">400-685-9993</view>
+    <view class="item call" bindtap="bindCall">呼叫</view>
+    <view class="item cancel" bindtap="bindCancel">取消</view>
+  </view>
+  
+  <view class="hint">
+    <view>凯德盟知识产权</view>
+    <view>涉外知识产权大型机构 全国12+连锁品牌</view>
+    <view>服务热线：400-685-9993</view>
+  </view>
+
+  <!-- 国家选择 -->
+  <v-countryWin show="{{country_show}}" bind:countryHide="countryHide"></v-countryWin>
+
+  <!-- 商标类别选择 -->
+  <v-trademarkWin show="{{trademark_show}}" bind:trademarkHide="trademarkHide"></v-trademarkWin>
+  
+  <!-- 查询结果 -->
+  <v-resultNull show="{{result_show}}" bind:resultHide="resultHide"></v-resultNull>
+
+  <!-- 拍照 -->
+  <view class="select_win camera_win" wx:if="{{camera_show}}">
+    <view class="item active">拍摄（照片）</view>
+    <view class="item">从手机相册选取</view>
+    <view class="item" bindtap="bindCameraCancel">取消</view>
+  </view>
+</view>

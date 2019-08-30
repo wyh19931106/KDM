@@ -1,0 +1,30 @@
+/* pages/category/trademark/trademark.wxss */
+.trademark {
+  width: 100%;
+  height: auto;
+}
+.trademark .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.trademark .list .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78rpx;
+  width: 33.33%;
+  font-size: 26rpx;
+  color: #636363;
+  border-bottom: 1rpx solid #eaeaea;
+  border-right: 1rpx solid #eaeaea;
+}
+.trademark .list .active {
+  background: #eaeaea;
+}
+.trademark .list .item:nth-child(3n) {
+  border-right: none;
+}
+.trademark .list .item .r {
+  width: 15rpx;
+  height: auto;
+}

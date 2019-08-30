@@ -1,0 +1,12 @@
+<!--pages/category/trademarkDetails/trademarkDetails.wxml-->
+<view class="trademarkDetails">
+  <view class="title">01类-化工原料</view>
+  <view class="text">用于工业、科学、摄影、农业、园艺和林业的化学品；未加工人造合成树脂，未加工塑料物质；灭火和防火用合成物；淬火和焊接用制剂；鞣制动物皮毛用物质；工业用粘合剂；油灰及其他膏状填料；堆肥，肥料，化肥；工业和科学用生物制剂。</view>
+  <view class="list">
+    <view class="{{index==0?'item active':'item'}}" wx:for="{{list}}" wx:key="{{no}}" data-type="{{item.no}}" bindtap="toTrademarkProduct">
+      <text class="no">{{item.no}}</text>
+      <text class="txt">{{item.txt}}</text>
+      <image class="r" src="../../../images/icon_right.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>

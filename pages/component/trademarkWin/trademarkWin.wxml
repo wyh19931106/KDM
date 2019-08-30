@@ -1,0 +1,18 @@
+<!--pages/component/trademarkWin/trademarkWin.wxml-->
+<view class="window trademark_window" wx:if="{{show}}" bindtap="trademarkHide">
+  <view class="window_box trademark_box" catchtap="bindDefault">
+    <view class="title">
+      <view class="cancel" bindtap="trademarkHide">取消</view>
+      <view class="confirm">确定</view>
+    </view>
+    <view class="infor_con">
+      <view class="prev" bindtap="bindPrev"><image src="../../../images/icon_prev.png" mode="widthFix"></image></view>
+      <swiper class="infor_box" current="{{current}}" bindanimationfinish="bindTrademarkChange">
+        <swiper-item class="slide_item" wx:for="{{list}}" wx:key="{{index}}">
+          <text class="item active" wx:for="{{item}}" wx:key="{{ind}}" wx:for-item="it">{{it}}</text>
+        </swiper-item>
+      </swiper>
+      <view class="next" bindtap="bindNext"><image src="../../../images/icon_next.png" mode="widthFix"></image></view>
+    </view>
+  </view>
+</view>

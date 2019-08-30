@@ -1,0 +1,30 @@
+<!--pages/category/product/product.wxml-->
+<view class="content product">
+  <view class="select_box">
+    <view class="select_t">
+      <view class="country item" bindtap="countryShow">
+        <input placeholder="国家（必填）" placeholder-style="color: #9a9a9a;" disabled />
+      </view>
+      <view class="no item">
+        <input type="text" placeholder="请输入商品名称如:服装\茶\食品等" placeholder-style="color: #9a9a9a;" confirm-type="search" bindconfirm="bindSearch"/>
+      </view>
+    </view>
+  </view>
+  <view class="count">搜素到<text>102</text>个结果</view>
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{no}}" data-ind="{{index}}" bindtap="bindSelect">
+      <image class="tick" wx:if="{{item.fav}}" src="../../../images/icon_tick_y.png" mode="widthFix"></image>
+      <image class="tick" wx:else src="../../../images/icon_tick.png" mode="widthFix"></image>
+      <text class="type">{{item.category_id}}</text>
+      <text class="no">{{item.id}}</text>
+      <text class="text">{{item.txt}}</text>
+    </view>
+  </view>
+  <view class="fixed_btn">添加到我的商品分类 1个</view>
+  
+  <!-- 国家选择 -->
+  <v-countryWin show="{{country_show}}" bind:countryHide="countryHide"></v-countryWin>
+  <!-- 查询结果 -->
+  <v-resultNull show="{{result_show}}" bind:resultHide="resultHide"></v-resultNull>
+
+</view>

@@ -1,0 +1,44 @@
+<!--pages/trademark/adviseTrademark/adviseTrademark.wxml-->
+<view class="adviseTrademark content">
+
+  <view class="query">
+    <view class="country" bindtap="countryShow"><text>国家</text></view>
+    <view class="cate" bindtap="trademarkShow"><text>类别</text></view>
+    <input class="text" type="text" placeholder="请输入关键词" placeholder-style="color: #9a9a9a;"/>
+    <view class="btn" bindtap="bindResult"><icon type="search" size="12" color="#ffffff" />搜索</view>
+  </view>
+
+  <view class="advise">
+    <view class="title">收藏建议注册的类别</view>
+    <view class="table">
+      <view class="{{index%4==0?'active td':'td'}}" wx:for="{{list}}" wx:key="{{item}}">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="fixed_b">
+    <view class="l" bindtap="alertShow">收藏类别</view>
+    <view class="r">人工查询</view>
+  </view>
+
+  <!-- 提示弹窗 -->
+  <view class="alert_win" wx:if="{{alert_show}}">
+    <view class="title">
+      <view class="cancel" bindtap="alertHide">取消</view>
+      <view class="confirm">确定</view>
+    </view>
+    <view class="infor_con">
+      <view>你已收藏商标类别3个</view>
+      <view>请到“个人中心’查看</view>
+    </view>
+  </view>
+
+  <!-- 国家选择 -->
+  <v-countryWin show="{{country_show}}" bind:countryHide="countryHide"></v-countryWin>
+
+  <!-- 商标类别选择 -->
+  <v-trademarkWin show="{{trademark_show}}" bind:trademarkHide="trademarkHide"></v-trademarkWin>
+
+  <!-- 查询结果 -->
+  <v-resultNull show="{{result_show}}" bind:resultHide="resultHide"></v-resultNull>
+
+</view>

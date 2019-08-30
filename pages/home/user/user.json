@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "v-bindMobile": "../../component/bindMobile/bindMobile"
+  }
+}

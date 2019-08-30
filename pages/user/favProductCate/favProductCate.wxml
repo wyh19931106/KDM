@@ -1,0 +1,22 @@
+<!--pages/user/favProductCate/favProductCate.wxml-->
+<view class="content favProductCate">
+  <view class="title">我的商品分类</view>
+  
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="no">20190429</view>
+      <view class="txt">0503-服装用除臭剂</view>
+      <view class="del">取消收藏</view>
+    </view>
+  </view>
+
+  <view class="fixed_b">
+    <view class="l" bindtap="exportShow">导出</view>
+    <view class="r" bindtap="shareShow">分享</view>
+  </view>
+  <!-- 导出 -->
+  <v-exportWin show="{{export_show}}" email="{{email}}" bind:exportHide="exportHide" bind:exportInput="exportInput"></v-exportWin>
+  
+  <!-- 分享 -->
+  <v-shareWin show="{{share_show}}" bind:shareHide="shareHide"></v-shareWin>
+</view>
